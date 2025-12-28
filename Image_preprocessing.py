@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 
- -----------------------------
-
 dataset = datasets.CIFAR10(
     root="./data",
     train=False,
@@ -76,3 +74,4 @@ batch_tensor = torch.stack(final_tensors)
 print("\nFinal Batch Tensor Shape:", batch_tensor.shape)
 print("Final Tensor Pixel Range:",
       batch_tensor.min().item(), batch_tensor.max().item())
+
